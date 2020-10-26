@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>João Paulo</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<style type="text/css">
+			.navbarnavbar-expand-lgnavbar-lightbg-light{
+				border: green;
+			}
+
+
+			body {
+  background-color: #EDEDED;
+}
+.circular-menu {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+}
+
+.circular-menu .floating-btn {
+  display: block;
+  width: 3.5em;
+  height: 3.5em;
+  border-radius: 50%;
+  background-color: hsl(4, 98%, 60%);
+  box-shadow: 0 2px 5px 0 hsla(0, 0%, 0%, .26);  
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  line-height: 3.9;
+  cursor: pointer;
+  outline: 0;
+}
+
+.circular-menu.active .floating-btn {
+  box-shadow: inset 0 0 3px hsla(0, 0%, 0%, .3);
+}
+
+.circular-menu .floating-btn:active {
+  box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, .4);
+}
+
+.circular-menu .floating-btn i {
+  font-size: 1.3em;
+  transition: transform .2s;  
+}
+
+.circular-menu.active .floating-btn i {
+  transform: rotate(-45deg);
+}
+
+.circular-menu:after {
+  display: block;
+  content: ' ';
+  width: 3.5em;
+  height: 3.5em;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -2;
+  background-color: hsl(4, 98%, 60%);
+  transition: all .3s ease;
+}
+
+.circular-menu.active:after {
+  transform: scale3d(5.5, 5.5, 1);
+  transition-timing-function: cubic-bezier(.68, 1.55, .265, 1);
+}
+
+.circular-menu .items-wrapper {
+  padding: 0;
+  margin: 0;
+}
+
+.circular-menu .menu-item {
+  position: absolute;
+  top: .2em;
+  right: .2em;
+  z-index: -1;
+  display: block;
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  font-size: 1em;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 3;
+  background-color: hsla(0,0%,0%,.1);
+  transition: transform .3s ease, background .2s ease;
+}
+
+.circular-menu .menu-item:hover {
+  background-color: hsla(0,0%,0%,.3);
+}
+
+.circular-menu.active .menu-item {
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.circular-menu.active .menu-item:nth-child(1) {
+  transform: translate3d(1em,-7em,0);
+}
+
+.circular-menu.active .menu-item:nth-child(2) {
+  transform: translate3d(-3.5em,-6.3em,0);
+}
+
+.circular-menu.active .menu-item:nth-child(3) {
+  transform: translate3d(-6.5em,-3.2em,0);
+}
+
+.circular-menu.active .menu-item:nth-child(4) {
+  transform: translate3d(-7em,1em,0);
+}
+
+/**
+ * The other theme for this menu
+ */
+
+.circular-menu.circular-menu-left {
+  right: auto; 
+  left: 1em;
+}
+
+.circular-menu.circular-menu-left .floating-btn {
+  background-color: hsl(217, 89%, 61%);
+}
+
+.circular-menu.circular-menu-left:after {
+  background-color: hsl(217, 89%, 61%);
+}
+
+.circular-menu.circular-menu-left.active .floating-btn i {
+  transform: rotate(90deg);
+}
+
+.circular-menu.circular-menu-left.active .menu-item:nth-child(1) {
+  transform: translate3d(-1em,-7em,0);
+}
+
+.circular-menu.circular-menu-left.active .menu-item:nth-child(2) {
+  transform: translate3d(3.5em,-6.3em,0);
+}
+
+.circular-menu.circular-menu-left.active .menu-item:nth-child(3) {
+  transform: translate3d(6.5em,-3.2em,0);
+}
+
+.circular-menu.circular-menu-left.active .menu-item:nth-child(4) {
+  transform: translate3d(7em,1em,0);
+}
+b{
+	color: #4b0082;
+}
+#dois{
+	right: 320;
+}
+
+
+
+
+
+		</style>
+	</head>
+<body>
+  <div class="container">
+  <!-- Conteúdo aqui --><div class="media">
+  <div class="media-body">
+    <h5 class="mt-0 mb-1">Olá,seja muito bem vindo!</h5>
+    <br>Sou João Paulo,<br><br><b><i>.... atualmente graduando em Ciências Exatas na Universidade Federal de Juiz de Fora e aluno de programação web na +Mais 1code. Estou sempre em busca de evolução em UX e UI por me interessar pela esperiência dos individuos em frontend....</i></b><br>
+  </div>
+  <img class="ml-3" src="images/avatar3.jpg" alt="120" height="160" width="150">
+</div>
+
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">JOÃO PAULO</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#home">Home <span class="sr-only">(página atual)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#interesses">APRESENTAÇÃO</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link" href="#formacao_academica">
+          FORMAÇÃO
+        </a>
+        
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#mais">MAIS</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+    </form>
+  </div>
+</nav>
+<br>
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="images/avatar.jpg" width="120" height="120" class="d-inline-block align-top" alt="">
+    <h1>João Paulo Souza</h1>
+			
+  </a>
+</nav><div id="dois"><div>
+  
+<ul class="list-group list-group-flush">
+  <li class="list-group-item"><b>IDADE:</b>  19 ANOS</li>
+  <li class="list-group-item"><b>NASCIONALIDADE:</b> BRASILEIRO</li>
+  <li class="list-group-item"><b>CIDADE:</b> Juiz de fora -MG</li>
+  <li class="list-group-item">SOLTEIRO</li>
+  <li class="list-group-item"></b>E-MAIL:</b> jpsouzaf144746@gmail.com</li>
+</ul></div>
+ 
+				<div id="video">
+				<div class="embed-responsive embed-responsive-4by3">
+ 					 <iframe class=" embed-responsive-item" src="https://youtu.be/pAOyWFOFhsg">VIDEO UX</iframe>
+				</div>
+		</div></div>
+<div class="d-flex justify-content-end">
+<div id="interesses" style="text-align: justify;">
+					<h3>Apresentação: </h3>
+						<p> João Paulo atualmente graduando em Ciências Exatas pela Universidade Federal de Juiz de Fora. Possuei técnico em Eletromecânica pelo Instituto Federal de Sudeste de Minas (2020). Durante sua trajetoria participou de Estágio na area de placas fotovoltaicas na empresa Mills Solaris        , monitor na intuição na area de hidráulica e pneumática ,  (...). Tem interesse em desenvolvimento de programação web e sites responsivos.</p>				
+				</div>
+				
+</div>
+					<br>
+			
+					<br>
+ 
+				<br>
+				<div id="formacao_academica"></div>
+				<h3>Formação Acadêmica:</h3>
+				<nav style="text-align: justify;">
+					<ol>
+						<li>Bacharel em Ciências Exatas
+							<ul>
+								<li>
+									<b>Unidade: </b>Universidade Federal de Juiz de Fora
+								</li>
+								<li><b>Início:</b> 2020</li>
+								<li><b>Previsão de Termino:</b> 2024</li>
+							</ul>
+						</li>
+						<li>Técnico em Eletromecânica
+							<ul>
+								<li> <b>Unidade :</b>Instituto Federal de Educação Ciencia e Tecnologia do Sudeste de Minas Gerais</li>
+								<li><b>Início:</b> 2017</li>
+								<li><b> Termino:</b>2019</li>
+							</ul>
+						</li>
+				    	<li>Ensino médio 
+							<ul>
+								<li><b>Unidade :</b>Escola Estadual Governador Juscelino Kubitschek </li>
+								<li><b>Início:</b> 2016</li>
+								<li><b>Termino:</b> 2018 </li>
+							</ul>
+							
+						</li>
+					</ol>
+					
+				</nav>
+			
+
+               <div id=""></div>
+				<h3>Experiências:</h3>
+				
+				<nav style="text-align: justify;">
+					<ol>
+						<li>Estagio como Técnico 
+							<ul>
+								<li><b>Empresa :</b> Mills Solaris</li>
+								<li><b>Início:</b>2018</li>
+								<li><b>Termino:</b>2019</li>
+							</ul>
+							
+						</li>
+						<li>Montoria
+							<ul>
+								<li><b>Intituição Tecnica:</b></li>
+								<li><b>Início:</b>2018/2</li>
+								<li><b>Termino:</b>2019/1</li>
+								
+							</ul>
+						</li>
+					</ol>
+				</nav>
+			
+			<div id=""></div>
+<div id="qualificacao">
+				<h3>Qualificação:</h3>
+				
+				<nav style="text-align: justify;">
+					<ol>
+						<li>Areas
+							<li><b>Eletrotecnica:</b>instalações  elétricas residenciais ,automação,maquinas elétricas continuas e alternadas,proteção e comando ,eletronica digital e analogica</li>
+							<li><b>mecânica</b>hidraulica,pneumatica,metrologia e controle dimensional ,sistemas termicos,manutenção preventiva ,elementos organicos de maquinas ,ajustagem,solidworks,torneamento,torneamento CNC,resistenci dos materiais </li>
+							<li><b>Metalúrgica </b>soldagem ,fisica de materiais ,solda MIG,cuidados com equipamentos de solda </li>
+							<li><b>aprendendo </b>programação </li>
+						</li>
+					</ol>
+				</nav>
+			
+		<br><br>
+		<br><br><footer>
+				&#169;Todos os direitos reservados João Paulo ,2020</footer>
+			</div></div>
+			<br>
+			<div id="circularMenu" class="circular-menu">
+
+  <a class="floating-btn" onclick="document.getElementById('circularMenu').classList.toggle('active');">
+    <i class="fa fa-plus"><b>MENU</b></i>
+  </a>
+
+  <menu class="items-wrapper">
+    <a href="#home" class="menu-item fa fa-facebook"><b>HOME</b></a>
+    <a href="#formacao_academica" class="menu-item fa fa-twitter"><b>FORM.</b></a>
+    <a href="#qualificacao" class="menu-item fa fa-google-plus"><b>QUALID.</b></a>
+    <a href="#video" class="menu-item fa fa-linkedin"><b>VIDEO</b></a>
+  </menu>
+
+</div>
+
+
+
+</div>
+</body>

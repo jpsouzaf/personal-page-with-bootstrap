@@ -1,0 +1,197 @@
+body {
+  	background-color: orange;
+	color: rgba(0,0,0,1);
+}
+
+h2 {
+ 	color: gray;
+  	text-align: center;
+}
+
+#interface{
+	width: 550px;
+	height: 100px
+	background-color: #ffffff;
+	margin: 0px auto 0px auto;
+}
+
+p {
+	font-family: verdana;
+	font-size: 20px;
+} 
+
+h3 {
+	flex-wrap:#FF0000;
+}
+
+li {
+	color: #FF0000;
+}
+
+#interface { 
+	text-align: center;
+}
+
+#cabeçalho img#icone{
+ 	position: absolute;
+ 	left:455px; 
+ 	top:210px;
+}
+ 
+#cabeçalho {
+	border-bottom: 1px #606060 box-shadow;
+ 	height: 200px;
+ 	background: url(../imagens/);
+ }
+
+ #cabecalho h1{
+ 	font-family: sans-serif;
+ }
+
+.fotoLegenda{
+	border: 180px solid white;
+ 	box-shadow:1px 1px 4px green;
+}
+
+.fotoLegenda img {
+ 	width: 30%;
+ 	height: 40%;
+}
+
+
+.fotoLegenda figcaption { 
+ 	opacity: 0;
+ 	position: absolute;
+ 	top: 10px;
+ 	background-color: rgba(0,0,4);
+ 	color: white;
+ 	width: 30%;
+ 	height: 40%;
+ 	transition: opacity :1s;
+}
+
+figure.fotoLegenda :hover figcaption{
+	opacity: 0.5;
+}
+
+#menu li {
+	list-style:none;
+ 	text-transform:uppercase;
+ 	top: -20px;
+ 	left: _300px;
+}
+
+#menu li{
+	display: inline-block;
+	background-color :gray;
+	padding: 8px
+	margin:2px; 
+	transition: background-color:1s; 
+}
+
+#menu h1 {
+	display: none;
+}
+
+#menu li hover {
+	background-color: #606060;
+}
+
+}
+#menu a{
+	color: black;
+}
+
+#menu a hover {
+	color: #ffffff;
+}
+
+#tabelaspec{
+	border: 1px solid #606060;
+} 
+
+#tabelaspec td {
+	border: 3px solid black;
+	border-spacing: 10px;
+}
+
+#tabelaspec td.ce {
+	color: red;
+	background-color: #606060;
+}
+
+#tabelaspec td.cd {
+	background-color: #cecece;
+}
+
+/*/slides de imagens /*/
+.slider input {
+	display: none;
+}
+.slider label {
+	background-color: ;
+	bottom:10px;
+	cursor: pointer;
+	display: block;
+	height: 10px;
+	position: absolute;
+	width:20;
+	z-index: 20;
+}
+
+
+#frases p {
+	height: 200px ;
+	width: -200px;
+}
+
+#slider {
+ 	overflow: hidden;
+}
+
+#slider figure {
+ 	position: relative;
+ 	width:500%;
+ 	margin: 0;
+ 	left: 0;
+ 	animation: 20s slider infinite;
+ }
+
+ #slider figure  img {
+ 	width: 20%;
+ 	float: left;
+ }
+
+ .banner{
+ 	width: 960px;
+ 	height: 350px;
+ 	margin: 0 auto;
+ 	animation: slide 10s infinite;
+ 	animation-direction: alternate;
+ }
+
+ @keyframes slider {
+ 	0%  {
+ 		left: 0;
+ 	}
+ 	40%{
+ 		left: 0;
+ 	}
+ 	45% {
+ 		left: -100%;
+ 	}
+ 	70% {
+ 		left: -100%;
+ 	}
+ 	75% {
+ 		left:-200%;
+ 	}
+ 	100% {
+ 		left: -200%;
+ 	}
+}
+
+
+
+
+
